@@ -16,6 +16,7 @@ if query.length == 0
   return system(EDITOR, '-n', '-a', STORE_DIR, file_path)
 end
 
+query = query.encode("UTF-8", "UTF-8-MAC")
 new_line = "#{time_str} #{query}"
 File.open(file_path, 'a') do |file|
   file.puts new_line
