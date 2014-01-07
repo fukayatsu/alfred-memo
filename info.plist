@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.fukayatsu.alfread-memo</string>
+	<string>com.fukayatsu.alfred-memo</string>
 	<key>connections</key>
 	<dict>
 		<key>15299C7A-CDEA-4359-8898-446F2892DB7C</key>
@@ -36,31 +36,23 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>alfread-memo</string>
+	<string>alfred-memo</string>
 	<key>objects</key>
 	<array>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>output</key>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>/usr/bin/env ruby memo.rb "{query}"</string>
+				<key>type</key>
 				<integer>0</integer>
-				<key>removeextension</key>
-				<false/>
-				<key>sticky</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>memo</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>A70A4E1E-712E-4575-967A-0AA64960904D</string>
+			<string>FF316160-82F1-4AC1-8D82-72A1F0AC9ED6</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -88,17 +80,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>escaping</key>
-				<integer>127</integer>
-				<key>script</key>
-				<string>/usr/bin/env ruby memo.rb "{query}"</string>
-				<key>type</key>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>output</key>
 				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>memo</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>FF316160-82F1-4AC1-8D82-72A1F0AC9ED6</string>
+			<string>A70A4E1E-712E-4575-967A-0AA64960904D</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
