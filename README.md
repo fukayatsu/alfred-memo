@@ -1,7 +1,7 @@
 alfread-memo
 ============
 
-instant memo workflow for alfread 2
+instant memo workflow for alfred 2
 
 # usage
 **You shold edit `STORE_DIR` and `EDITOR` in `memo.rb`**
